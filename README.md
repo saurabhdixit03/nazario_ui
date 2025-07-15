@@ -8,7 +8,7 @@ It’s built using **ReactJS**, designed with clean aesthetics, and optimized fo
 ## 🌟 Features
 
 - **Responsive Navbar**  
-  Logo, Search bar, Wishlist (❤️), Cart (🛒), and Sign In popup.
+  Logo, Search bar, Wishlist, Cart, and Sign In popup.
 
 - **Hero Section**  
   Highlights eyewear categories: *Eyeglasses, Sunglasses, Computer, Contact Lenses, Reading, Accessories.*
