@@ -1,0 +1,80 @@
+
+@import "./variables.css";
+
+.filter-bar-wrapper {
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-family: var(--font-body);
+  z-index: 20;
+}
+
+.filter-bar-scroll {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 24px;
+}
+
+.filter-category-title {
+  font-weight: 500;
+  color: var(--color-ebony);
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 100%; /* just below the bar */
+  background-color: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 280px;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+
+/* Individual block under dropdown */
+.filter-block {
+  min-width: 180px;
+}
+
+.filter-block-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-blue);
+  font-family: var(--font-display);
+}
+
+.filter-block-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-option {
+  font-size: 14px;
+  color: var(--color-ebony);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-blue);
+}
+
+
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}

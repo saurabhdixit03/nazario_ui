@@ -1,0 +1,84 @@
+@import "./variables.css";
+
+.footer {
+  background-color: #E8F3F9; /* new soft blue bg */
+  color: var(--color-ebony);
+  font-family: var(--font-body);
+  padding: 40px 24px;
+  position: relative;
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.footer__section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer__section h3 {
+  font-family: var(--font-display);
+  margin-bottom: 12px;
+  color: var(--color-blue);
+}
+
+.footer__section p,
+.footer__section ul,
+.footer__section li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.footer__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__section a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer__section a:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+}
+
+/* Floating Icons */
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 28px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.floating-icons a {
+  font-size: 16px;
+  color: var(--color-blue);
+  transition: color 0.3s ease;
+}
+
+.floating-icons a:hover {
+  color: var(--color-torea);
+}

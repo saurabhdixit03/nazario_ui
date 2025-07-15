@@ -1,0 +1,155 @@
+@import "./variables.css";
+
+.product-showcase {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--color-light-bg);
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.left-banner {
+  flex: 0 0 280px;
+  background: white;
+  padding: 36px 28px;
+  border-radius: 14px;
+  
+}
+
+.banner-heading {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--color-ebony);
+  margin-bottom: 16px;
+}
+
+.left-banner p {
+  font-size: 16px;
+  color: #666;
+}
+
+.right-cards {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.card-group {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-ebony);
+  margin-bottom: 12px;
+}
+
+.explore-btn {
+  padding: 10px 24px;
+  background-color: #8DC9E1; 
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 12px;
+}
+
+.explore-btn:hover {
+  background-color: #70b6d4; 
+}
+
+
+.arrow-btn {
+  background: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  height: fit-content;
+  align-self: center;
+}
+
+.arrow-btn:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .product-showcase {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .left-banner {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-cards {
+    flex-direction: column;
+  }
+
+  .card-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrow-btn {
+    display: none;
+  }
+}
+
+.card-slider-wrapper {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.product-showcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}

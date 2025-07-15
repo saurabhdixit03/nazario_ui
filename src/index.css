@@ -1,0 +1,64 @@
+@import "./styles/variables.css";
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.reviews-heading {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-ebony);
+  text-align: center;
+  margin: 40px 0 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.reviews-heading::before,
+.reviews-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 38vw;
+  height: 2px;
+  background: linear-gradient(
+    to left,
+    transparent,
+    var(--color-blue)
+  );
+}
+
+.reviews-heading::after {
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-blue)
+  );
+}
+
+.reviews-heading::before {
+  right: 100%;
+  margin-right: 2px;
+}
+
+.reviews-heading::after {
+  left: 100%;
+  margin-left: 2px;
+}
+
+/* Wrapper to center the heading inline */
+.center-heading-wrapper {
+  display: flex;
+  justify-content: center;
+}
